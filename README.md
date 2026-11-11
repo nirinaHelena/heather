@@ -80,6 +80,19 @@ Data were downloaded on 9 November 2026 with [`src/fetch_data.py`](src/fetch_dat
 
 ## 3. Process
 
+Cleaning is done in [`notebooks/01_cleaning.ipynb`](notebooks/01_cleaning.ipynb) with Python (pandas). The output is `data/processed/madagascar_climate_daily.csv`: 98,616 rows × 12 columns, one row per city per day.
+
+### Cleaning log
+| Step | Operation | Result |
+|---|---|---|
+| 1 | Combined the 6 city files and added each city's climate zone | 98,616 rows (16,436 per city); every city mapped to a zone |
+| 2 | Converted `date` from text (`YYYYMMDD`) to a date type | Dates valid; all 5 measurements stored as numbers |
+| 3 | Replaced the missing-value code `-999` with `NaN` | 0 missing values found |
+| 4 | Consistency checks: duplicates, missing days, `T2M_MIN ≤ T2M ≤ T2M_MAX`, rainfall ≥ 0, humidity 0–100 %, temperature between -5 and 50 °C | 0 rows failing; no rows removed or modified |
+| 5 | Investigated extreme values | Hottest day: 39.8 °C (Toliara, 11 Jan 2025). Coldest night: 3.0 °C (Fianarantsoa, 30 Jun 2009). Wettest day: 244 mm (Antananarivo, 12 Apr 2020), kept and discussed in *Limitations* |
+| 6 | Added `year`, `month`, `season` (rainy: Nov–Apr, dry: May–Oct) and `hydro_year` (1 July – 30 June) | Hydrological years 1980 and 2025 are incomplete and are excluded from rainy-season analyses |
+| 7 | Reordered columns, sorted by city and date, saved the clean file | 98,616 rows × 12 columns |
+
 ## 4. Analyze
 
 ## 5. Share
@@ -91,6 +104,7 @@ Data were downloaded on 9 November 2026 with [`src/fetch_data.py`](src/fetch_dat
 ## How to reproduce
 
 ## Limitations
+- The highest daily rainfall in the dataset (244 mm, Antananarivo, 12 April 2020) belongs to a six-day wet episode (about 680 mm from 11 to 16 April) that also appears in Toamasina and Mahajanga, so it reflects a real weather system. However, no matching report was found, and the model may overestimate its intensity.
 
 ## Sources & acknowledgements
 - These data were obtained from the NASA Langley Research Center (LaRC) POWER Project funded through the NASA Earth Science/Applied Science Program.
