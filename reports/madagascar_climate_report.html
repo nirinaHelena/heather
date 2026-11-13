@@ -8153,7 +8153,7 @@ a.anchor-link {
 <li><strong>Linear regression</strong>: slope of the best-fit line.</li>
 <li><strong>Mann-Kendall test with Sen's slope</strong>: the standard method in climatology, robust to exceptional years.</li>
 </ul>
-<p>Slopes are given <strong>per decade</strong>. A trend is called significant when the Mann-Kendall p-value is below 0.05.</p>
+<p>Slopes are given <strong>per decade</strong>. A trend is called significant when the Mann-Kendall p-value is below 0.05. For a few series the Hamed-Rao correction cannot be computed (negative corrected variance); the classic Mann-Kendall p-value is used instead.</p>
 </div>
 </div>
 </div>
@@ -8266,15 +8266,6 @@ a.anchor-link {
 <div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>/home/nirinahelena/Documents/heather/heather/.venv/lib64/python3.14/site-packages/pymannkendall/pymannkendall.py:99: RuntimeWarning: invalid value encountered in sqrt
-  z = (s - 1)/np.sqrt(var_s)
-/home/nirinahelena/Documents/heather/heather/.venv/lib64/python3.14/site-packages/pymannkendall/pymannkendall.py:103: RuntimeWarning: invalid value encountered in sqrt
-  z = (s + 1)/np.sqrt(var_s)
-</pre>
-</div>
-</div>
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>

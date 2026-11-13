@@ -227,6 +227,11 @@ python src/fetch_era5_heat.py      # ERA5 hourly data: the longest download (rat
 ```
 Then run `notebooks/01_cleaning.ipynb` and `notebooks/02_analysis.ipynb` in order. The download scripts skip cities that are already saved, so they can be restarted safely.
 
+Rebuild the HTML report (code cells hidden):
+```bash
+.venv/bin/python -m jupyter nbconvert --to html --no-input notebooks/02_analysis.ipynb --output madagascar_climate_report --output-dir reports
+```
+
 ## Limitations
 - **Gridded estimates, not station records:** values describe grid cells of 5 to 25 km, not a precise point in a city.
 - **Six cities cannot represent the whole island:** the severe 2020–21 drought of the far south (Androy, Anosy) does not appear in Toliara, where that season was wetter than normal.
