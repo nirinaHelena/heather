@@ -174,7 +174,21 @@ All charts are exported to [`figures/`](figures/):
 | [`06_dangerous_heat_days.png`](figures/06_dangerous_heat_days.png) | Dangerous-heat days have more than tripled in Mahajanga, Toliara and Toamasina since the 1980s |
 
 ## 6. Act
-_To be written in phase 6._
+
+These recommendations follow directly from the measured climate hazards. They do not account for costs or local conditions, and should be discussed with the people concerned.
+
+| Stakeholder | Recommendation | Based on |
+|---|---|---|
+| **Public-health authorities and municipalities** | Set up heat-health warnings on the coasts, starting with Mahajanga, then Toliara and Toamasina: alerts based on the daily heat index, shaded rest and drinking water, outdoor work and school activities moved away from the hottest hours | Dangerous-heat days rose from 19 to 64 per year in Mahajanga, 8 to 25 in Toliara and 4 to 17 in Toamasina |
+| **Environmental and food-security organisations** | Prioritise drought preparedness on the western, eastern and northern coasts (water storage, drought-tolerant crop varieties), and monitor the seasonal SPI each April to detect a dry season early | Dry rainy seasons rose from 2 to 7 in Mahajanga, 1 to 6 in Toamasina and 3 to 6 in Antsiranana |
+| **Farmers and agricultural extension services** | Keep current sowing calendars: the start of the rains has not shifted. In the South, only sow after a reliable onset (about 20 mm over 3 days) and favour short-cycle, drought-tolerant crops | No significant change in onset dates; in Toliara, half of the seasons never reach a reliable onset and 4.4 false starts occur per season |
+| **Citizens and local communities** | Share these results in a simple form (warming stripes, city-level figures) so that people can see how their region's climate has changed in their lifetime | All six cities warmed by about 1 °C since 1981 |
+
+### Next steps
+- **Validate with ground stations:** compare these results with Météo Madagascar station records.
+- **Cover the far south:** add Androy and Anosy, where the 2020–21 drought hit hardest but which no city in this study represents.
+- **Link climate to health:** combine these data with malaria records (planned follow-up project).
+- **Keep it up to date:** the download scripts can be re-run each year to extend the series.
 
 ## Repository structure
 ```
