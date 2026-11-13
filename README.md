@@ -167,7 +167,7 @@ All charts are exported to [`figures/`](figures/):
 | Figure | Message |
 |---|---|
 | [`01_rainfall_normals.png`](figures/01_rainfall_normals.png) | The east coast gets rain all year; everywhere else, it falls between November and April |
-| [`02_temperature_normals.png`](figures/02_temperature_normals.png) | The Highlands are about 6 to 10 °C cooler than the coasts all year round |
+| [`02_temperature_normals.png`](figures/02_temperature_normals.png) | The Highlands are about 5 to 9 °C cooler than the coasts all year round |
 | [`03_warming_stripes.png`](figures/03_warming_stripes.png) | In every city, cool years dominated the 1980s–90s; warm years dominate since 2010 |
 | [`04_rainy_season_onset.png`](figures/04_rainy_season_onset.png) | Since 1981, the rainy season has not started significantly later in any city |
 | [`05_drought_spi.png`](figures/05_drought_spi.png) | Dry rainy seasons have become more frequent on the northern, western and eastern coasts |
